@@ -3,13 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <RootNamespace>dotnet_core_azure_deployment</RootNamespace>
+    <RootNamespace>DotnetCoreAzureDeployment</RootNamespace>
   </PropertyGroup>
 
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App"/>
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Pages/*.cshtml.fs" />
+    <Compile Include="Startup.fs" />
+    <Compile Include="Program.fs" />
   </ItemGroup>
 
 </Project>
